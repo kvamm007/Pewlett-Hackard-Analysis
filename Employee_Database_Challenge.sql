@@ -27,7 +27,7 @@ ORDER BY rt.emp_no, rt.to_date DESC;
 SELECT 
 	COUNT(ut.title),
 	ut.title
---INTO retiring_titles
+INTO retiring_titles
 FROM unique_titles AS ut
 GROUP BY ut.title
 ORDER BY ut.count DESC;
